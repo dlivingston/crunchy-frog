@@ -1,0 +1,65 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font: inherit; font-size: 100%; vertical-align: baseline; }
+
+html { line-height: 1; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: none; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; content: none; }
+
+a img { border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary { display: block; }
+
+html { font-size: 10px; }
+
+body { font-family: "Open Sans", sans-serif; font-size: 1.6rem; line-height: 1.5; background: #fdf6e3 url("../images/graphpapers/graphpaper-solarized-light.png") repeat fixed; color: #657b83; }
+
+a, a:visited { color: #b58900; }
+
+h1 { font-size: 4rem; }
+
+.crunchy-frog input { background: #fdf6e3; border: 1px solid #002b36; border-radius: 5px; padding: 2px 5px; }
+.crunchy-frog .jumbotron { text-align: center; border: 1px solid #657b83; background-color: rgba(253, 246, 227, 0.5); margin: 20px auto; }
+.crunchy-frog .jumbotron .dl-logo { width: 200px; transition: transform 0.25s ease 0s; }
+.crunchy-frog .jumbotron .dl-logo path { fill: #657b83; }
+.crunchy-frog .jumbotron .dl-logo:hover { transition: transform 0.25s ease 0s; transform: scale(1.2); }
+.crunchy-frog .jumbotron .dl-logo:hover path { fill: #586e75; }
+.crunchy-frog .jumbotron h1 { margin: 20px 0; font-size: 4rem; }
+.crunchy-frog .jumbotron p { margin: 10px 0; font-size: 1.6rem; }
+@media (min-width: 992px) { .crunchy-frog .jumbotron { margin: 40px auto; } }
+.crunchy-frog .main h2 { font-size: 2.6rem; color: #586e75; }
+.crunchy-frog .projects, .crunchy-frog .sidebar { border: 1px solid #657b83; background-color: rgba(253, 246, 227, 0.5); border-radius: 6px; padding: 20px 15px; }
+.crunchy-frog .projects > p { margin-bottom: 20px; }
+.crunchy-frog .project-card { margin-bottom: 30px; border: 1px solid #93a1a1; border-left: 5px solid #586e75; padding: 10px; border-radius: 5px; font-size: 1.4rem; font-weight: 200; line-height: 1.6; }
+.crunchy-frog .project-card h3 .btn-primary { font-size: 2.1rem; font-weight: 600; color: #657b83; background-color: transparent; border: 1px solid #657b83; }
+.crunchy-frog .project-card h3 .btn-primary:hover { color: #b58900; text-decoration: none; border: 1px solid #b58900; }
+.crunchy-frog .project-card strong { font-weight: 600; color: #859900; }
+.crunchy-frog .project-card p { margin: 10px 0; }
+.crunchy-frog .project-card a:hover { font-weight: 600; }
+.crunchy-frog footer { margin: 20px auto; }
+@media (min-width: 992px) { .crunchy-frog footer { margin: 40px auto; } }
+.crunchy-frog footer .copyright { text-align: center; }
+@media (min-width: 992px) { .crunchy-frog footer .copyright { text-align: left; line-height: 6rem; } }
+.crunchy-frog footer .social-links { text-align: center; margin-top: 20px; }
+@media (min-width: 992px) { .crunchy-frog footer .social-links { text-align: right; margin-top: 0; } }
+
+.social-links svg { width: auto; }
+.social-links svg path { fill: #657b83; }
+.social-links .social-link { width: 50px; height: 50px; border-radius: 50%; border: 1px solid #657b83; background-color: rgba(253, 246, 227, 0.5); display: inline-block; padding: 5px; margin: 5px 2px; transition: transform 0.25s ease 0s; }
+.social-links .social-link:hover { transition: transform 0.25s ease 0s; transform: scale(1.2); color: #b58900; border: 1px solid #b58900; }
+.social-links .social-link:hover path { fill: #b58900; }
+
+.four-o-four .jumbotron { font-size: 1.4rem; }
+.four-o-four .jumbotron h1 { font-size: 8rem; line-height: 1; }
+.four-o-four .jumbotron h2 { font-size: 3rem; }
+.four-o-four .jumbotron h3 { font-size: 2.4rem; }
+.four-o-four .jumbotron .btn { background-color: transparent; color: #b58900; border: 1px solid #b58900; margin: 20px 0; }
+.four-o-four .jumbotron .btn:hover { font-weight: 600; text-decoration: underline; }
+
+.thoughts p { font-family: "Indie Flower", cursive; font-size: 3rem; }
+.thoughts .author { text-align: right; margin-top: 15px; }
