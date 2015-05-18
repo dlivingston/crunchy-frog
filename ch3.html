@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="notesApp">
 <head>
 	<meta charset="UTF-8">
 	<title>Project Crunchy Frog</title>
@@ -20,8 +20,8 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/crunchy-frog-styles.css">
 </head>
-<body ng-app class="crunchy-frog">
-<section class="container">
+<body ng-controller="MainCtrl as ctrl" class="crunchy-frog">
+	<section class="container">
 		<div class="jumbotron">
 			<svg class="dl-logo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
 				<g>
@@ -36,38 +36,17 @@
 				</g>
 			</svg>
 			<h1>Project Crunchy Frog</h1>	
-			<p>This is a page I've setup to run some AngularJS practice exercises.</p>	
+			<h2>Chapter 3</h2>
+			<h3>Unit Testing in AngularJS</h3>
 		</div>
 	</section>
 	<section class="main container">
-		<div class="row ch1">
+		<div class="row ch3">
 			<div class="col-md-12">
-				<h2>Chapter 1</h2>
-				<div class="projects">
-					<input type="text" ng-model="name" placeholder="Enter your name" name="" id="">
-					<h2>Hello <span ng-bind="name"></span></h2>
-				</div>
-			</div>
-		</div>
-		<div class="row ch2">
-			<div class="col-md-12">
-				<div class="projects">
-					<div class="project-card">
-						<h3><a class="btn btn-primary" href="/crunchy-frog/ch2.html">Chapter 2</a></h3>
-						<p class="date"><strong>Last Updated:</strong> 2015-05-16</p>
-						<p class="notes"><strong>Notes:</strong> Basic AngularJS Directives and Controllers</p>
-					</div>
-					<div class="project-card">
-						<h3><a class="btn btn-primary" href="/crunchy-frog/ch3.html">Chapter 3</a></h3>
-						<p class="date"><strong>Last Updated:</strong> 2015-05-16</p>
-						<p class="notes"><strong>Notes:</strong> Unit Testing in AngularJS</p>
-					</div>
-				</div>
+				TBD
 			</div>
 		</div>
 	</section>
-	
-
 	<footer class="container">
 		<div class="row">
 			<div class="copyright col-md-8">
@@ -145,6 +124,54 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-	<script src="js/scripts.js"></script>
+	<script type="text/javascript">
+		angular.module('notesApp', []) 
+			.controller('MainCtrl', [function() {
+				var self = this;
+				var notes = [
+					{
+						id: 1,
+						label: 'First Note',
+						done: false, 
+						someRandom: 31431
+					},
+					{
+						id: 2,
+						label: 'Second Note',
+						done: false
+					},
+					{
+						id: 3,
+						label: 'Finished Third Note',
+						done: true
+					}
+				];
+				self.notes1 = angular.copy(notes);
+				self.notes2 = angular.copy(notes);
+				self.changeNotes = function() {
+					notes = [
+						{
+							id: 1,
+							label: 'Changed Note',
+							done: false, 
+							someRandom: 4242
+						},
+						{
+							id: 2,
+							label: 'Second Note',
+							done: false
+						},
+						{
+							id: 3,
+							label: 'Finished Third Note',
+							done: true
+						}
+					];
+					self.notes1 = angular.copy(notes);
+					self.notes2 = angular.copy(notes);
+				};
+			}]);
+	</script>
+
 </body>
 </html>

@@ -33,6 +33,13 @@ h1 { font-size: 4rem; }
 .crunchy-frog .jumbotron p { margin: 10px 0; font-size: 1.6rem; }
 @media (min-width: 992px) { .crunchy-frog .jumbotron { margin: 40px auto; } }
 .crunchy-frog .main h2 { font-size: 2.6rem; color: #586e75; }
+.crunchy-frog .ch1 { margin-bottom: 20px; }
+.crunchy-frog .ch2 .projects { margin-bottom: 10px; }
+.crunchy-frog .ch2 .label { color: #586e75; font-size: 1.8rem; }
+.crunchy-frog .ch2 .done { color: #859900; }
+.crunchy-frog .ch2 .done .label { color: #859900; }
+.crunchy-frog .ch2 .pending { color: #dc322f; }
+.crunchy-frog .ch2 .pending .label { color: #dc322f; }
 .crunchy-frog .projects, .crunchy-frog .sidebar { border: 1px solid #657b83; background-color: rgba(253, 246, 227, 0.5); border-radius: 6px; padding: 20px 15px; }
 .crunchy-frog .projects > p { margin-bottom: 20px; }
 .crunchy-frog .project-card { margin-bottom: 30px; border: 1px solid #93a1a1; border-left: 5px solid #586e75; padding: 10px; border-radius: 5px; font-size: 1.4rem; font-weight: 200; line-height: 1.6; }
