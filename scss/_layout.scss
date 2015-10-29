@@ -9,6 +9,11 @@
 		border-radius: 5px;
 		padding: 2px 5px;
 	}
+	.btn-default {
+		color: $base00;
+		background-color: rgba($base3, .50);
+		border: 1px solid $base00;
+	}
 	.jumbotron {
 		text-align: center;
 		border: 1px solid $base00;

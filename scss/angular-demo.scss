@@ -1,0 +1,40 @@
+header .dl-logo {
+	width: 68px;
+	float: left;	
+	margin-top: 26px;
+	margin-right: 20px;
+}
+header .dl-logo path {
+	fill: #EBEBEB;
+}
+.artistpage .artist img {
+	width: 40px;
+	float: left;
+	margin: 20px 10px 0 0;
+}
+.artist h3 {
+	font-size: 1.1em;
+}
+.artist a {
+	color: #EBEBEB;
+}
+.artistlist .artist:hover {
+	background-color: lighten(#4e5d6c, 20%);
+	a {
+		text-decoration: none;
+	}
+}
+
+.artist.ng-enter.ng-enter-active,
+.artist.ng-leave {
+  opacity: 1;
+  height: 80px;
+  overflow: hidden;
+}
+
+.artist.ng-leave.ng-leave-active,
+.artist.ng-enter {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}

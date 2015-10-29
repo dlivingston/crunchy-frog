@@ -7,32 +7,17 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha256-o0IkLyCCWGBI+ryg6bL44/f8s4cb7+5bncR4LvU57a8= sha512-jptu6vg45XTY9uPX3vD5nHN4vASCN2hHl+fhmgkdd/px/bFHKMXmDXhkNmTiCpKqH6sliEPFakl2KZNav2Zo1Q==" crossorigin="anonymous">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha256-Sk3nkD6mLTMOF0EOpNtsIry+s1CsaqQC1rVLTAy+0yc= sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+	<script src="js/angular.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/angular-animate.min.js"></script>
+	<script src="js/app.js"></script>
 	<script src="js/controllers.js"></script>
-	<style>
-		header .dl-logo {
-			width: 68px;
-			float: left;	
-			margin-top: 26px;
-			margin-right: 20px;
-		}
-		header .dl-logo path {
-			fill: #EBEBEB;
-		}
-		.artist img {
-			width: 40px;
-			float: left;
-			margin: 20px 10px 0 0;
-		}
-		.artist h3 {
-			font-size: 1.1em;
-		}
-	</style>
+	<link rel="stylesheet" href="css/angular-demo.css">
 </head>
 <body class="container-fluid">
 	<nav class="navbar navbar-default row">
 		<div class="container">
-			<a href="" class="navbar-brand">AngularJS Testing Page</a>
+			<a href="http://www.lynda.com/AngularJS-tutorials/Up-Running-AngularJS/154414-2.html" class="navbar-brand">Up and Running with AngularJS Testing Page</a>
 		</div>
 	</nav>
 	<header class="row">
@@ -42,33 +27,10 @@
 				<path id="l" class="l" fill="#000000" d="m 93.4,70 -7,0 -24.2,0 0,-40 8.3,0 0,34.3 18.5,0 C 90.7,59.8 91.5,55 91.5,50 91.5,27.1 72.9,8.5 50,8.5 38.7,8.5 28.5,13 21,20.3 l -11.2,0 C 18.9,8 33.5,0 50,0 l 0,0 c 23.9,0 43.9,16.8 48.8,39.2 0.8,3.5 1.2,7 1.2,10.8 0,7.1 -1.5,13.9 -4.2,20 l -9.5,0 0,0 7.1,0 z" />
 			</svg>
 			<h1>AngularJS Demo</h1>
+			<p>This is my implementation of the web app featured in the Lynda.com tutorial <a href="http://www.lynda.com/AngularJS-tutorials/Up-Running-AngularJS/154414-2.html">Up and Running with AngularJS</a></p>
 		</div>
 	</header>
 	
-	<section class="container">
-		<div class="row">
-			<div class="form-group search">
-				<h1>Artist Directory</h1>
-				<label>Search: </label>
-				<input class="form-control" ng-model="query" placeholder="Search for artists" autofocus>
-				<label class="sr-only">Artist Order</label>
-				<select ng-model="artistOrder" class="form-control">
-					<option value="name">Name</option>
-					<option value="reknown">Reknown</option>
-				</select>
-			</div>
-		</div>
-		<div ng-controller="MyController" class="row">
-			<ul class="artistlist list-group col-md-6">
-				<li class="artist cf list-group-item" ng-repeat="item in artists | filter: query | orderBy: artistOrder">
-					<img ng-src="images/artists/{{item.shortname}}_tn.jpg" alt="Photo of {{item.name}} ">
-					<div class="info">
-						<h2> {{item.name}} </h2>
-						<h3> {{item.reknown}} </h3>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</section>
+	<div class="container" ng-view></div>
 	</body>
 </html>

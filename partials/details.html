@@ -1,0 +1,13 @@
+<section class="artistinfo row">
+	<div class="artist well col-md-12" ng-model="artists">
+		<a href="#/details/{{prevItem}}" class="btn btn-primary"><span class="glyphicon glyphicon-triangle-left"></span></a>
+		<a href="#/details/{{nextItem}}" class="btn btn-primary"><span class="glyphicon glyphicon-triangle-right"></span></a>
+		<h1>{{artists[whichItem].name}}</h1>
+		<div class="info">
+			<h3>{{artists[whichItem].reknown}}</h3>
+			<img ng-src="images/artists/{{artists[whichItem].shortname}}_tn.jpg" alt="Photo of {{artists[whichItem].name}}" class="col-md-3">
+			<div class="bio col-md-9">{{artists[whichItem].bio}}</div>
+		</div>
+	</div>
+	<a href="#/list" class="btn btn-primary"><span class="glyphicon glyphicon-triangle-left"></span> Back to search</a>
+</section>

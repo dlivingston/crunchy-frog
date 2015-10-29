@@ -24,6 +24,7 @@ a, a:visited { color: #b58900; }
 h1 { font-size: 4rem; }
 
 .crunchy-frog input { background: #fdf6e3; border: 1px solid #002b36; border-radius: 5px; padding: 2px 5px; }
+.crunchy-frog .btn-default { color: #657b83; background-color: rgba(253, 246, 227, 0.5); border: 1px solid #657b83; }
 .crunchy-frog .jumbotron { text-align: center; border: 1px solid #657b83; background-color: rgba(253, 246, 227, 0.5); margin: 20px auto; }
 .crunchy-frog .jumbotron .dl-logo { width: 200px; transition: transform 0.25s ease 0s; }
 .crunchy-frog .jumbotron .dl-logo path { fill: #657b83; }
